@@ -26,15 +26,4 @@ router.post("/api/notes", (req, res) => {
   res.status(200).json(savedData);
 });
 
-//   let dataFromDb = JSON.parse(
-//     fs.readFileSync(__dirname + "/db/db.json", "utf-8")
-//   );
-
-//   dataFromDb.push(postData);
-
-//   fs.writeFileSync(
-//     __dirname + "/db/db.json",
-//     JSON.stringify(dataFromDb),
-//     "utf-8"
-//   );
 module.exports = router;

@@ -14,35 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(routes);
 
-// GET Route for notes
-// app.get("/notes", (req, res) =>
-//   res.sendFile(path.join(__dirname, "/public/notes.html"))
-// );
-
-// app.get("/api/notes", (req, res) => {
-//   const data = JSON.parse(fs.readFileSync(__dirname + "/db/db.json", "utf-8"));
-
-//   res.status(200).json(data);
-// });
-
-// app.post("/api/notes", (req, res) => {
-//   const postData = { ...req.body, id: uuidv4() };
-
-//   let dataFromDb = JSON.parse(
-//     fs.readFileSync(__dirname + "/db/db.json", "utf-8")
-//   );
-
-//   dataFromDb.push(postData);
-
-//   fs.writeFileSync(
-//     __dirname + "/db/db.json",
-//     JSON.stringify(dataFromDb),
-//     "utf-8"
-//   );
-
-//   res.status(200).json(dataFromDb);
-// });
-
 // GET Route for index page
 app.get("/notes", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/notes.html"))
