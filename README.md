@@ -11,4 +11,4 @@ the technology that was used was express, requiring the 3001 local host port as 
 
 ## Deployed Website
 
-[Heroku Deployed App](https://murmuring-badlands-33690.herokuapp.com/notes)
+[Heroku Deployed App](https://murmuring-badlands-33690.herokuapp.com)
